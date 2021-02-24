@@ -4,8 +4,8 @@ Overview
 
 ## Description
 ### Frontend
-#### Vue by NPM
-##### Install Vue
+#### Vue CLI
+##### Installation
 
 Install Vue.js
 ```
