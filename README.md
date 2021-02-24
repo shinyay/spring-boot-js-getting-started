@@ -6,12 +6,17 @@ Overview
 ### Frontend
 #### Vue by NPM
 ##### Install Vue
+
+Install Vue.js
 ```
 $ npm install vue@next
 ```
+```
+$ npm list
+vue-npm@
+└── vue@3.0.5
+```
 
-#### Vue by Vue CLI
-##### Install Vue
 Install Vue CLI
 ```
 $ npm install -g @vue/cli
