@@ -22,6 +22,11 @@ Install Vue CLI
 $ npm install -g @vue/cli
 ```
 
+#### Vite
+```
+$ npm init @vitejs/app
+```
+
 ### Backend
 ## Demo
 
