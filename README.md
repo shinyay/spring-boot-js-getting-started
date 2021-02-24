@@ -24,7 +24,20 @@ $ npm install -g @vue/cli
 
 #### Vite
 ```
-$ npm init @vitejs/app
+$ npm init @vitejs/app frontend
+
+Need to install the following packages:
+  @vitejs/create-app
+Ok to proceed? (y) y
+
+Scaffolding project in ...
+vite/frontend...
+✔ Select a template: · vue
+```
+```
+$ cd frontend
+$ npm install
+$ npm run dev
 ```
 
 ### Backend
