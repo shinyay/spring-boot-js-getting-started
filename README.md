@@ -22,7 +22,21 @@ Install Vue CLI
 $ npm install -g @vue/cli
 ```
 
+##### Create Project
+```
+$ vue create frontend
+
+📄  Generating README.md...
+🎉  Successfully created project frontend.
+👉  Get started with the following commands:
+```
+```
+ $ cd frontend
+ $ npm run serve
+```
+
 #### Vite
+##### Create Project
 ```
 $ npm init @vitejs/app frontend
 
