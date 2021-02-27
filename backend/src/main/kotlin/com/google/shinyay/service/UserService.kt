@@ -10,4 +10,8 @@ class UserService(val repository: UserRepository) {
     fun getUsers(): MutableIterable<User> {
         return repository.findAll()
     }
+
+    fun registerUser(user: User): User {
+        return repository.save(user)
+    }
 }
