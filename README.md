@@ -3,6 +3,12 @@
 Overview
 
 ## Description
+### Backend
+#### Dependency
+- org.springframework.boot
+  - spring-boot-starter-web
+  - spring-boot-starter-actuator
+
 ### Frontend
 #### Vue CLI
 ##### Installation
@@ -54,7 +60,6 @@ $ npm install
 $ npm run dev
 ```
 
-### Backend
 ## Demo
 
 ## Features
