@@ -8,6 +8,7 @@ Overview
 - org.springframework.boot
   - spring-boot-starter-web
   - spring-boot-starter-actuator
+  - spring-boot-starter-data-jpa
 
 ### Frontend
 #### Vue CLI
