@@ -44,6 +44,11 @@ Retrieve Users
 $ curl localhost:8080/api/v1/users
 ```
 
+Update User
+```
+$ curl -X PUT -H "Content-Type: application/json" -d '{"id":"1", "email":"janedoe@email.com","firstName":"Jane", "lastName":"Doe"}' localhost:8080/api/v1/users
+```
+
 
 ### Frontend
 #### Vue CLI
