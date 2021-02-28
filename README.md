@@ -24,6 +24,14 @@ Spring Data JPA identify entity class with `@Entity` annotation.
 data class User()
 ```
 
+##### JPA Support Plugin
+This plugin specifies `@Entity`, `@Embeddable`, and `@MappedSuperclass` **no-arg** annotations automatically.
+```
+plugins {
+	kotlin("plugin.jpa")
+}
+```
+
 
 ### Frontend
 #### Vue CLI
