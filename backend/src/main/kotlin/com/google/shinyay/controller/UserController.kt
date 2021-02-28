@@ -33,4 +33,10 @@ class UserController(val service: UserService) {
         logger.info("Update User: ${user.firstName}/${user.lastName}")
         return ResponseEntity.ok(service.updateUser(user))
     }
+
+    @DeleteMapping("/user/{id}")
+    fun deleteUser(@PathVariable id: Long): ResponseEntity<Unit> {
+        logger.info("Delete ID: $id")
+        return ResponseEntity.ok(service.deleteUser(id))
+    }
 }
