@@ -39,7 +39,7 @@ Create User
 $ curl -X POST -H "Content-Type: application/json" -d '{"email":"johndoe@email.com","firstName":"John", "lastName":"Doe"}' localhost:8080/api/v1/users
 ```
 
-Retrieve User by ID
+Retrieve Users
 ```
 $ curl localhost:8080/api/v1/users
 ```
