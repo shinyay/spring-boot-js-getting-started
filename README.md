@@ -49,6 +49,10 @@ Update User
 $ curl -X PUT -H "Content-Type: application/json" -d '{"id":"1", "email":"janedoe@email.com","firstName":"Jane", "lastName":"Doe"}' localhost:8080/api/v1/users
 ```
 
+Delete User by ID
+```
+$ curl -X DELETE localhost:8080/api/v1/users/1
+```
 
 ### Frontend
 #### Vue CLI
