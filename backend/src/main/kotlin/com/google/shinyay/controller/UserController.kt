@@ -28,4 +28,9 @@ class UserController(val service: UserService) {
         return ResponseEntity.ok(service.registerUser(user))
     }
 
+    @PutMapping("/users")
+    fun updateUser(@RequestBody user: User): ResponseEntity<User> {
+        logger.info("Update User: ${user.firstName}/${user.lastName}")
+        return ResponseEntity.ok(service.updateUser(user))
+    }
 }
