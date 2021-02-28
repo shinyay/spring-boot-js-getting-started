@@ -12,6 +12,19 @@ Overview
 - com.h2database
   - h2
 
+#### JPA Configuration
+- Entity Annotation
+- JPA Support Plugin for Kotlin
+
+##### Entity Annotation
+Spring Data JPA identify entity class with `@Entity` annotation.
+
+```kotlin
+@Entity
+data class User()
+```
+
+
 ### Frontend
 #### Vue CLI
 ##### Installation
