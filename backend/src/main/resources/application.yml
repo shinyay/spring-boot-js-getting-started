@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: backend-app
+  datasource:
+    platform: h2
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;database_to_upper=false
+    username: sa
+    password: password
+    sql-script-encoding: UTF-8
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
