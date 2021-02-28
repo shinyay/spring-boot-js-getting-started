@@ -7,6 +7,6 @@ import javax.persistence.Id
 data class User(@Id
                 @GeneratedValue(strategy = GenerationType.AUTO)
                 var id: Long,
-                val firstName: String,
-                val lastName: String,
-                val email: String)
+                var firstName: String,
+                var lastName: String,
+                var email: String)

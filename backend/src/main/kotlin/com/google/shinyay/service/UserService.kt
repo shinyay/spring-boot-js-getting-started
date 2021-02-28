@@ -19,4 +19,12 @@ class UserService(val repository: UserRepository) {
     fun getUser(id: Long): Optional<User> {
         return repository.findById(id)
     }
+
+    fun updateUser(user: User): User {
+        val userUpdated = repository.findById(user.id).get()
+        userUpdated.firstName = user.firstName
+        userUpdated.lastName = user.lastName
+        userUpdated.email = user.email
+        return repository.save(userUpdated)
+    }
 }
