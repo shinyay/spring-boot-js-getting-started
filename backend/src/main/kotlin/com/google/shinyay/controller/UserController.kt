@@ -22,9 +22,10 @@ class UserController(val service: UserService) {
         return service.getUser(id)
     }
 
-    @PostMapping("/user")
+    @PostMapping("/users")
     fun addUser(@RequestBody user: User): ResponseEntity<User> {
         logger.info("Add User: ${user.firstName}/${user.lastName}")
         return ResponseEntity.ok(service.registerUser(user))
     }
+
 }
