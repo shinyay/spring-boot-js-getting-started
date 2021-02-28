@@ -3,10 +3,8 @@ package com.google.shinyay.controller
 import com.google.shinyay.entity.User
 import com.google.shinyay.logger
 import com.google.shinyay.service.UserService
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
@@ -18,9 +16,15 @@ class UserController(val service: UserService) {
         return service.getUsers()
     }
 
-    @GetMapping("users/{id}")
+    @GetMapping("/users/{id}")
     fun getUser(@PathVariable id: Long): Optional<User> {
         logger.info("Find ID: $id")
         return service.getUser(id)
+    }
+
+    @PostMapping("/user")
+    fun addUser(@RequestBody user: User): ResponseEntity<User> {
+        logger.info("Add User: ${user.firstName}/${user.lastName}")
+        return ResponseEntity.ok(service.registerUser(user))
     }
 }
