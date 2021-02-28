@@ -14,7 +14,7 @@ Overview
 
 #### JPA Configuration
 - Entity Annotation
-- JPA Support Plugin for Kotlin
+- [JPA Support Plugin for Kotlin](https://kotlinlang.org/docs/no-arg-plugin.html#jpa-support)
 
 ##### Entity Annotation
 Spring Data JPA identify entity class with `@Entity` annotation.
