@@ -27,4 +27,6 @@ class UserService(val repository: UserRepository) {
         userUpdated.email = user.email
         return repository.save(userUpdated)
     }
+
+    fun deleteUser(id: Long) = repository.deleteById(id)
 }
