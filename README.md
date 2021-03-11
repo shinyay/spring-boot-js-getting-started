@@ -33,13 +33,13 @@ plugins {
 ```
 
 #### REST API
-|URI|Description|
-|---|-----------|
-|||
-|||
-|||
-|||
-|||
+|METHOD|URI|Description|
+|------|---|-----------|
+|GET|/api/v1/users|Show All Users|
+|GET|/api/v1|/users/{id}|Show a User by ID|
+|POST|/api/v1/users|Create a User|
+|PUT|/api/v1/users|Update a User|
+|DELETE|/api/v1|/users/{id}|Delete a User by ID|
 
 #### Test for REST API
 
