@@ -102,10 +102,10 @@ $ vue create frontend
 
 |Config Options|Description|Default|
 |--------------|-----------|-------|
+|devServer|webpack-dev-server can be used to quickly develop an application.[Options](https://webpack.js.org/configuration/dev-server/)||
+||||
 |publicPath|If your app is deployed at a sub-path, you will need to specify that sub-path using this option. For example, if your app is deployed at https://www.foo.com/my-app/, set `publicPath` to `'/my-app/'`|`/`|
 |outputDir|The directory where the production build files will be generated in when running `vue-cli-service build`|`dist`|
-||||
-||||
 ||||
 ||||
 ||||
