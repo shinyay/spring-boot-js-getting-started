@@ -132,6 +132,21 @@ It contains 3 chunks of code: HTML, CSS and JavaScript.
 - `<script></script>` : JavaScript
 - `<style></style>` : CSS
 
+The following script section means:
+1. Load component: `import XYZ`
+2. Use component: `export default {components: {XYZ}}`
+
+```js
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+}
+```
+
 #### Vite
 ##### Create Project
 ```
