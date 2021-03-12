@@ -147,6 +147,8 @@ export default {
 }
 ```
 
+Then you can use component in `<template></template>`
+
 #### Vite
 ##### Create Project
 ```
