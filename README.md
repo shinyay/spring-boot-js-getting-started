@@ -100,16 +100,16 @@ $ vue create frontend
 
 - [vue.config.js](https://cli.vuejs.org/config/#vue-config-js)
 
-|Config Options|Description|
-|--------------|-----------|
-|publicPath|If your app is deployed at a sub-path, you will need to specify that sub-path using this option. For example, if your app is deployed at https://www.foo.com/my-app/, set `publicPath` to `'/my-app/'`|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|Config Options|Description|Default|
+|--------------|-----------|-------|
+|publicPath|If your app is deployed at a sub-path, you will need to specify that sub-path using this option. For example, if your app is deployed at https://www.foo.com/my-app/, set `publicPath` to `'/my-app/'`|`/`|
+|outputDir|The directory where the production build files will be generated in when running `vue-cli-service build`|`dist`|
+||||
+||||
+||||
+||||
+||||
+||||
 
 #### Vite
 ##### Create Project
