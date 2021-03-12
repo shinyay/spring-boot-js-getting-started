@@ -93,6 +93,7 @@ $ vue create frontend
 ```
  $ cd frontend
  $ npm run serve
+ $ curl localhost:3000/api/v1/hello
 ```
 
 #### Vite
