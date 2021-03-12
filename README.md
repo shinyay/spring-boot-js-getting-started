@@ -93,8 +93,23 @@ $ vue create frontend
 ```
  $ cd frontend
  $ npm run serve
- $ curl localhost:3000/api/v1/hello
 ```
+
+##### Vue Configuration
+`vue.config.js` is an optional config file that will be automatically loaded by `@vue/cli-service` if it's present in your project root.
+
+- [vue.config.js](https://cli.vuejs.org/config/#vue-config-js)
+
+|Config Options|Description|
+|--------------|-----------|
+|publicPath|If your app is deployed at a sub-path, you will need to specify that sub-path using this option. For example, if your app is deployed at https://www.foo.com/my-app/, set `publicPath` to `'/my-app/'`|
+|||
+|||
+|||
+|||
+|||
+|||
+|||
 
 #### Vite
 ##### Create Project
