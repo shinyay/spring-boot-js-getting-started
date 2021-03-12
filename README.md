@@ -124,6 +124,10 @@ module.exports = {
 }
 ```
 
+##### Vue Application Main Component - App.vue
+`App.vue` is a Single File Component which is main entry point.
+It contains 3 chunks of code: HTML, CSS and JavaScript.
+
 #### Vite
 ##### Create Project
 ```
