@@ -236,11 +236,25 @@ Then you can use component in `<template></template>`
 - `/src/router/index.js`
 
 Create our `routes` in an array and specify the following items:
+
 |Item|Description|
 |----|-----------|
 |Path|URL path where this route can be found|
 |Name|An optional name to use when we link to this route|
 |Component|Which component to load when this route is called|
+
+- `/src/main.js`
+
+Import Router configuration to use `router/index.js`
+
+```js
+import router from './router'
+
+const app = createApp(App);
+
+app.use(router);
+app.mount("#app");
+```
 
 #### Vite
 ##### Create Project
