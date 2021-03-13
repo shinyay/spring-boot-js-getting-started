@@ -232,6 +232,16 @@ export default {
 
 Then you can use component in `<template></template>`
 
+##### Routing Configuration
+- `/src/router/index.js`
+
+Create our `routes` in an array and specify the following items:
+|Item|Description|
+|----|-----------|
+|Path|URL path where this route can be found|
+|Name|An optional name to use when we link to this route|
+|Component|Which component to load when this route is called|
+
 #### Vite
 ##### Create Project
 ```
