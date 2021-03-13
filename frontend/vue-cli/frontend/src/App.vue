@@ -1,6 +1,11 @@
 <template>
   <v-app id="app">
-    <img alt="Vue logo" src="./assets/logo.png" style="width:50px;">
+    <v-img
+      :src="require('./assets/logo.svg')"
+      class="my-3"
+      contain
+      height="200"
+    />
     <div class="interface">
       <v-navigation-drawer permanent color="transparent">
       <v-list-item>
@@ -18,39 +23,63 @@
         nav
       >
         <v-list-item>
-          <v-list-item-title><router-link to="/">Home</router-link></v-list-item-title>
-          <v-list-item-title><router-link to="/about">About</router-link></v-list-item-title>
           <v-list-item-title><router-link to="/list" class="linkpath">ユーザーリスト</router-link></v-list-item-title>
         </v-list-item>
         <v-list-item>
           <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title>
         </v-list-item>
+        <v-list-item>
+          <v-list-item-title><router-link to="/hello" class="linkpath">Hello World</router-link></v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <router-view></router-view>
+    <router-view />
     </div>
+    <v-row class="text-center">
+      <v-col cols="12">
+        <!-- <v-img
+          :src="require('./assets/logo.png')"
+          class="my-3"
+          contain
+          height="200"
+        /> -->
+      </v-col>
+    </v-row>
+    <!-- <v-main>
+      <HelloWorld/>
+    </v-main> -->
   </v-app>
 </template>
 
+<script>
+// import HelloWorld from './components/HelloWorld';
+
+export default {
+  name: 'App',
+
+  components: {
+    // HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
   padding: 30px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.linkpath {
+  margin: 0 10px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.interface {
+  display: flex;
+  justify-content: center;
 }
 </style>
