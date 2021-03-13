@@ -256,6 +256,8 @@ app.use(router);
 app.mount("#app");
 ```
 
+##### `<router-view>` and `<router-link>`
+
 #### Vite
 ##### Create Project
 ```
