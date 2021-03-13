@@ -165,6 +165,7 @@ added 78 packages in 7s
  $ cd frontend
  $ npm run serve
 ```
+![vue-project](https://user-images.githubusercontent.com/3072734/111015265-47cb6f80-83eb-11eb-92aa-bb8534ab06ab.png)
 
 ##### Vue Configuration
 `vue.config.js` is an optional config file that will be automatically loaded by `@vue/cli-service` if it's present in your project root.
