@@ -90,12 +90,78 @@ $ npm install -g @vue/cli
 ##### Create Project
 ```
 $ vue create frontend
+```
+
+```
+Vue CLI v4.5.11
+? Please pick a preset:
+  Default ([Vue 2] babel, eslint)
+  Default (Vue 3 Preview) ([Vue 3] babel, eslint)
+❯ Manually select features
+```
+```
+Vue CLI v4.5.11
+? Check the features needed for your project:
+ ◉ Choose Vue version
+ ◉ Babel
+ ◯ TypeScript
+ ◯ Progressive Web App (PWA) Support
+❯◉ Router
+ ◯ Vuex
+ ◯ CSS Pre-processors
+ ◉ Linter / Formatter
+ ◯ Unit Testing
+ ◯ E2E Testing
+```
+```
+ Vue CLI v4.5.11
+? Choose a version of Vue.js that you want to start the project with
+  2.x
+❯ 3.x (Preview)
+```
+```
+Vue CLI v4.5.11
+? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) Y
+```
+```
+Vue CLI v4.5.11
+? Pick a linter / formatter config: (Use arrow keys)
+❯ ESLint with error prevention only
+  ESLint + Airbnb config
+  ESLint + Standard config
+  ESLint + Prettier
+```
+```
+Vue CLI v4.5.11
+? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◉ Lint on save
+ ◯ Lint and fix on commit
+```
+```
+Vue CLI v4.5.11
+? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+❯ In dedicated config files
+  In package.json
+```
+```
+Vue CLI v4.5.11
+? Save this as a preset for future projects? (y/N) N
+```
+```
+⚙️  Installing CLI plugins. This might take a while...
+
+added 1285 packages in 1m
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+added 78 packages in 7s
+⚓  Running completion hooks...
 
 📄  Generating README.md...
+
 🎉  Successfully created project frontend.
 👉  Get started with the following commands:
-```
-```
+
  $ cd frontend
  $ npm run serve
 ```
