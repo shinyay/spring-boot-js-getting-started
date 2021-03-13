@@ -77,6 +77,11 @@ vue-npm@
 └── vue@3.0.5
 ```
 
+Install Vue Router
+```
+$ npm install vue-router@next
+```
+
 Install Vue CLI
 ```
 $ npm install -g @vue/cli
