@@ -1,9 +1,35 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <v-app id="app">
+    <img alt="Vue logo" src="./assets/logo.png" style="width:50px;">
+    <div class="interface">
+      <v-navigation-drawer permanent color="transparent">
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>
+            Content
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item>
+          <v-list-item-title><router-link to="/">Home</router-link></v-list-item-title>
+          <v-list-item-title><router-link to="/about">About</router-link></v-list-item-title>
+          <v-list-item-title><router-link to="/list" class="linkpath">ユーザーリスト</router-link></v-list-item-title>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <router-view></router-view>
+    </div>
+  </v-app>
 </template>
 
 <style>
