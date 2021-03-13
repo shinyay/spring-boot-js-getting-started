@@ -258,6 +258,19 @@ app.mount("#app");
 
 ##### `<router-view>` and `<router-link>`
 
+- `<router-view>`: Rederling links
+- `<router-link>`: Creating links
+
+```js
+<template>
+  <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+  </div>
+  <router-view />
+</template>
+```
+
 #### Vite
 ##### Create Project
 ```
