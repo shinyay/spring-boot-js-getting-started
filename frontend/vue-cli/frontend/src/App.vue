@@ -1,76 +1,40 @@
 <template>
-  <!-- <v-app id="app">
-    <v-container>
-      <v-row class="text-center">
-        <v-col cols="12">
-          <v-img
-            :src="require('./assets/logo.svg')"
-            class="my-3"
-            contain
-            height="200"
-          />
-        </v-col>
-      </v-row>
+  <v-app id="app">
+    <div class="interface">
+      <v-navigation-drawer permanent color="transparent">
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>
+            Content
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
 
-      <div class="interface">
-        <v-navigation-drawer permanent color="transparent">
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>
-                Content
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
+      <v-divider></v-divider>
 
-          <v-divider></v-divider>
-
-          <v-list dense nav >
-            <v-list-item>
-              <v-list-item-title><router-link to="/list" class="linkpath">ユーザーリスト</router-link></v-list-item-title> |
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title> |
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title><router-link to="/hello" class="linkpath">Hello World</router-link></v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-      <router-view />
-      </div>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-    </v-container>
-  </v-app> -->
-  <div id="app">
-    <Dashboard />
-  </div>
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item>
+          <v-list-item-title><router-link to="/" class="linkpath">ユーザーリスト</router-link></v-list-item-title>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <router-view></router-view>
+    </div>
+  </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
-
-import Dashboard from './components/Dashboard.vue'
 export default {
-  name: 'App',
-  components: {
-    Dashboard
-  }
-};
-
-// export default {
-//   name: 'App',
-
-//   components: {
-//     // HelloWorld,
-//   },
-
-//   data: () => ({
-//     //
-//   }),
-// };
+  name: 'app',
+}
 </script>
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
