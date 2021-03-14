@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: 'DisplayUser',
+        name: 'DisplayBoard',
         props: ['numberOfUsers'],
         methods: {
             getAllUsers() {

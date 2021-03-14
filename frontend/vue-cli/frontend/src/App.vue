@@ -1,7 +1,7 @@
 <template>
-  <v-app id="app">
+  <!-- <v-app id="app">
     <v-container>
-      <!-- <v-row class="text-center">
+      <v-row class="text-center">
         <v-col cols="12">
           <v-img
             :src="require('./assets/logo.svg')"
@@ -10,7 +10,7 @@
             height="200"
           />
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <div class="interface">
         <v-navigation-drawer permanent color="transparent">
@@ -38,27 +38,38 @@
         </v-navigation-drawer>
       <router-view />
       </div>
-    <!-- <v-main>
+    <v-main>
       <HelloWorld/>
-    </v-main> -->
+    </v-main>
     </v-container>
-  </v-app>
+  </v-app> -->
+  <div id="app">
+    <Dashboard />
+  </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld';
 
+import Dashboard from './components/UserDashboard.vue'
 export default {
   name: 'App',
-
   components: {
-    // HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
+    Dashboard
+  }
 };
+
+// export default {
+//   name: 'App',
+
+//   components: {
+//     // HelloWorld,
+//   },
+
+//   data: () => ({
+//     //
+//   }),
+// };
 </script>
 <style>
 #app {

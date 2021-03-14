@@ -12,10 +12,10 @@
             </thead>
             <tbody>
               <tr v-for="item in users" :key="item.id">
-                <td>{{ item.id }}</td>
-                <td>{{ item.firstName }}</td>
-                <td>{{ item.lastName }}</td>
-                <td>{{ item.email }}</td>
+                  <td>{{ item.id }}</td>
+                  <td>{{ item.firstName }}</td>
+                  <td>{{ item.lastName }}</td>
+                  <td>{{ item.email }}</td>
               </tr>
             </tbody>
         </table>
@@ -26,5 +26,5 @@
     export default {
         name: 'Users',
         props: ['users']
-      }
+     }
 </script>
