@@ -51,7 +51,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld';
 
-import Dashboard from './components/UserDashboard.vue'
+import Dashboard from './components/Dashboard.vue'
 export default {
   name: 'App',
   components: {

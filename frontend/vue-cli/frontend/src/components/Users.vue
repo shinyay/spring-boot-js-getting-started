@@ -26,5 +26,5 @@
     export default {
         name: 'Users',
         props: ['users']
-     }
+    }
 </script>
