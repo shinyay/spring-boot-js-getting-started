@@ -8,7 +8,6 @@
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>Email</th>
-                <th>Location</th>
             </tr>
             </thead>
             <tbody>
@@ -17,7 +16,6 @@
                 <td>{{ item.firstName }}</td>
                 <td>{{ item.lastName }}</td>
                 <td>{{ item.email }}</td>
-                <td>{{ item.location }}</td>
               </tr>
             </tbody>
         </table>
