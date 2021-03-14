@@ -26,10 +26,10 @@
 
           <v-list dense nav >
             <v-list-item>
-              <v-list-item-title><router-link to="/list" class="linkpath">ユーザーリスト</router-link></v-list-item-title>
+              <v-list-item-title><router-link to="/list" class="linkpath">ユーザーリスト</router-link></v-list-item-title> |
             </v-list-item>
             <v-list-item>
-              <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title>
+              <v-list-item-title><router-link to="/new" class="linkpath">新規ユーザー</router-link></v-list-item-title> |
             </v-list-item>
             <v-list-item>
               <v-list-item-title><router-link to="/hello" class="linkpath">Hello World</router-link></v-list-item-title>
